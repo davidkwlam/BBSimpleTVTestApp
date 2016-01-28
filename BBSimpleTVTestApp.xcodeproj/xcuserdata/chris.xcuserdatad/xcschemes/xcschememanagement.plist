@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TopShelfExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>83CC09FF1C59E16B00675699</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83CC0A151C59EB9800675699</key>
 		<dict>
 			<key>primary</key>
 			<true/>

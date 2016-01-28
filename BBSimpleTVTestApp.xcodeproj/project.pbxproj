@@ -15,6 +15,9 @@
 		83CC09EF1C59E16B00675699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CC09EE1C59E16B00675699 /* Assets.xcassets */; };
 		83CC09FA1C59E16B00675699 /* BBSimpleTVTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CC09F91C59E16B00675699 /* BBSimpleTVTestAppTests.m */; };
 		83CC0A051C59E16B00675699 /* BBSimpleTVTestAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CC0A041C59E16B00675699 /* BBSimpleTVTestAppUITests.m */; };
+		83CC0A191C59EB9900675699 /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CC0A181C59EB9900675699 /* TVServices.framework */; };
+		83CC0A1D1C59EB9900675699 /* ServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CC0A1C1C59EB9900675699 /* ServiceProvider.m */; };
+		83CC0A211C59EB9900675699 /* TopShelfExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83CC0A161C59EB9800675699 /* TopShelfExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,28 @@
 			remoteGlobalIDString = 83CC09DB1C59E16A00675699;
 			remoteInfo = BBSimpleTVTestApp;
 		};
+		83CC0A1F1C59EB9900675699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CC09D41C59E16A00675699 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CC0A151C59EB9800675699;
+			remoteInfo = TopShelfExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83CC0A251C59EB9900675699 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				83CC0A211C59EB9900675699 /* TopShelfExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		83CC09DC1C59E16A00675699 /* BBSimpleTVTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBSimpleTVTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +76,11 @@
 		83CC0A001C59E16B00675699 /* BBSimpleTVTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBSimpleTVTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CC0A041C59E16B00675699 /* BBSimpleTVTestAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBSimpleTVTestAppUITests.m; sourceTree = "<group>"; };
 		83CC0A061C59E16B00675699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83CC0A161C59EB9800675699 /* TopShelfExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TopShelfExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CC0A181C59EB9900675699 /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
+		83CC0A1B1C59EB9900675699 /* ServiceProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceProvider.h; sourceTree = "<group>"; };
+		83CC0A1C1C59EB9900675699 /* ServiceProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceProvider.m; sourceTree = "<group>"; };
+		83CC0A1E1C59EB9900675699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +105,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83CC0A131C59EB9800675699 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CC0A191C59EB9900675699 /* TVServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +122,8 @@
 				83CC09DE1C59E16A00675699 /* BBSimpleTVTestApp */,
 				83CC09F81C59E16B00675699 /* BBSimpleTVTestAppTests */,
 				83CC0A031C59E16B00675699 /* BBSimpleTVTestAppUITests */,
+				83CC0A1A1C59EB9900675699 /* TopShelfExtension */,
+				83CC0A171C59EB9900675699 /* Frameworks */,
 				83CC09DD1C59E16A00675699 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +134,7 @@
 				83CC09DC1C59E16A00675699 /* BBSimpleTVTestApp.app */,
 				83CC09F51C59E16B00675699 /* BBSimpleTVTestAppTests.xctest */,
 				83CC0A001C59E16B00675699 /* BBSimpleTVTestAppUITests.xctest */,
+				83CC0A161C59EB9800675699 /* TopShelfExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +182,24 @@
 			path = BBSimpleTVTestAppUITests;
 			sourceTree = "<group>";
 		};
+		83CC0A171C59EB9900675699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83CC0A181C59EB9900675699 /* TVServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83CC0A1A1C59EB9900675699 /* TopShelfExtension */ = {
+			isa = PBXGroup;
+			children = (
+				83CC0A1B1C59EB9900675699 /* ServiceProvider.h */,
+				83CC0A1C1C59EB9900675699 /* ServiceProvider.m */,
+				83CC0A1E1C59EB9900675699 /* Info.plist */,
+			);
+			path = TopShelfExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,10 +210,12 @@
 				83CC09D81C59E16A00675699 /* Sources */,
 				83CC09D91C59E16A00675699 /* Frameworks */,
 				83CC09DA1C59E16A00675699 /* Resources */,
+				83CC0A251C59EB9900675699 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				83CC0A201C59EB9900675699 /* PBXTargetDependency */,
 			);
 			name = BBSimpleTVTestApp;
 			productName = BBSimpleTVTestApp;
@@ -198,6 +258,23 @@
 			productReference = 83CC0A001C59E16B00675699 /* BBSimpleTVTestAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		83CC0A151C59EB9800675699 /* TopShelfExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CC0A221C59EB9900675699 /* Build configuration list for PBXNativeTarget "TopShelfExtension" */;
+			buildPhases = (
+				83CC0A121C59EB9800675699 /* Sources */,
+				83CC0A131C59EB9800675699 /* Frameworks */,
+				83CC0A141C59EB9800675699 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TopShelfExtension;
+			productName = TopShelfExtension;
+			productReference = 83CC0A161C59EB9800675699 /* TopShelfExtension.appex */;
+			productType = "com.apple.product-type.tv-app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +286,7 @@
 				TargetAttributes = {
 					83CC09DB1C59E16A00675699 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = L4FET847JL;
 					};
 					83CC09F41C59E16B00675699 = {
 						CreatedOnToolsVersion = 7.2;
@@ -217,6 +295,10 @@
 					83CC09FF1C59E16B00675699 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 83CC09DB1C59E16A00675699;
+					};
+					83CC0A151C59EB9800675699 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = L4FET847JL;
 					};
 				};
 			};
@@ -236,6 +318,7 @@
 				83CC09DB1C59E16A00675699 /* BBSimpleTVTestApp */,
 				83CC09F41C59E16B00675699 /* BBSimpleTVTestAppTests */,
 				83CC09FF1C59E16B00675699 /* BBSimpleTVTestAppUITests */,
+				83CC0A151C59EB9800675699 /* TopShelfExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -258,6 +341,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		83CC09FE1C59E16B00675699 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CC0A141C59EB9800675699 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,6 +384,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83CC0A121C59EB9800675699 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CC0A1D1C59EB9900675699 /* ServiceProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -306,6 +404,11 @@
 			isa = PBXTargetDependency;
 			target = 83CC09DB1C59E16A00675699 /* BBSimpleTVTestApp */;
 			targetProxy = 83CC0A011C59E16B00675699 /* PBXContainerItemProxy */;
+		};
+		83CC0A201C59EB9900675699 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83CC0A151C59EB9800675699 /* TopShelfExtension */;
+			targetProxy = 83CC0A1F1C59EB9900675699 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -406,6 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BBSimpleTVTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.BBSimpleTVTestApp;
@@ -418,6 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = BBSimpleTVTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.BBSimpleTVTestApp;
@@ -473,6 +578,30 @@
 			};
 			name = Release;
 		};
+		83CC0A231C59EB9900675699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TopShelfExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.BBSimpleTVTestApp.TopShelfExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		83CC0A241C59EB9900675699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				INFOPLIST_FILE = TopShelfExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.BBSimpleTVTestApp.TopShelfExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -506,6 +635,14 @@
 			buildConfigurations = (
 				83CC0A101C59E16B00675699 /* Debug */,
 				83CC0A111C59E16B00675699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		83CC0A221C59EB9900675699 /* Build configuration list for PBXNativeTarget "TopShelfExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CC0A231C59EB9900675699 /* Debug */,
+				83CC0A241C59EB9900675699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

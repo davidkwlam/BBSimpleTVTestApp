@@ -514,6 +514,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.BBSimpleTVTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -527,6 +528,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.BBSimpleTVTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -621,6 +623,7 @@
 				83CC0A0B1C59E16B00675699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83CC0A0C1C59E16B00675699 /* Build configuration list for PBXNativeTarget "BBSimpleTVTestAppTests" */ = {
 			isa = XCConfigurationList;
@@ -629,6 +632,7 @@
 				83CC0A0E1C59E16B00675699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83CC0A0F1C59E16B00675699 /* Build configuration list for PBXNativeTarget "BBSimpleTVTestAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -637,6 +641,7 @@
 				83CC0A111C59E16B00675699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83CC0A221C59EB9900675699 /* Build configuration list for PBXNativeTarget "TopShelfExtension" */ = {
 			isa = XCConfigurationList;
@@ -645,6 +650,7 @@
 				83CC0A241C59EB9900675699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
